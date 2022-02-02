@@ -1,0 +1,257 @@
+/* 7 модуль */
+.footer {
+}
+
+.footer__link {
+  margin: 0;
+  font-family: var(---primary-font-family);
+  font-weight: var(--input-font-weight);
+  font-size: var(--input-place-font-size);
+  line-height: 1.25;
+
+  text-decoration: none;
+
+  color: #939393;
+  @media screen and (min-width: 768px) {
+    font-size: var(--primary-font-size);
+  }
+}
+
+.footer__heart {
+  display: flex;
+  font-size: 20px;
+  color: red;
+  border: none;
+  background-color: white;
+
+  @media screen and (min-width: 768px) {
+    font-size: 25px;
+  }
+}
+
+.footer__block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+}
+
+/* .box { */
+/*  */
+/* align-items: center;
+  flex-wrap: wrap;
+  align-items: baseline; */
+/* justify-content: center; */
+
+/* border: none;
+  background-color: white;
+} */
+
+.footer__heart:nth-child(1) {
+  animation: animate125 3000ms infinite 1000ms;
+}
+
+@keyframes animate125 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e45e5e33;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.footer__modal {
+  position: fixed;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal__button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.modal__icon {
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__button:hover .modal-icon,
+.modal__button:focus .modal-icon {
+  color: red;
+}
+
+/* sjjsfjyksjhjhjhjjhhjjhjhjhjjhjhjhj */
+
+/* body {
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+.magic-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.magic-btn > .icon {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.site-nav__link {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.site-nav__link:hover {
+  text-decoration: underline;
+}
+
+.site-nav__link--current {
+  color: tomato;
+}
+
+.color-picker__option {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.transaction-table {
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 8px;
+  border: 1px solid #2a2a2a;
+}
+
+.title__link {
+  display: inline-flex;
+  margin-left: 40px;
+} */
+/* .container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .box::before {
+  display: inline-block;
+  font-size: 20px;
+} */
+
+/* .box:nth-child(1)::before {
+  content: "scale(1.25)";
+} */
+
+/* .box:nth-child(2) {
+  /*  Оригинальный размер, значение по умолчанию  */
+/*   transform: scale(1); 
+  background-color: #03a9f4;
+} */
+
+/* .box:nth-child(2)::before {
+  content: "scale(1)";
+}
+
+.box:nth-child(3) {
+  /*   transform: scale(0.75); 
+  background-color: palevioletred;
+
+  animation: animate75 3000ms infinite 1000ms;
+} */
+
+/* .box:nth-child(3)::before {
+  content: "scale(0.75)";
+} */
+
+@keyframes animate125 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* @keyframes animate75 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.75);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+} */
